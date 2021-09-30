@@ -1,0 +1,516 @@
+<div class="loader-container" style="z-index: 2000">
+  <div class="loader">Loading...</div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="vendor/bootstrap Css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="shortcut icon" href="https://images.app.goo.gl/ZyXg9ngebSotdhrE7" type="image/x-icon">
+
+    <title>Bellesa</title>
+    <meta name="title" content="Bellesa">
+<meta name="description" content="MMSIT Design Class SWD>
+Profile Website">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="myat-hsu-paing2003.netlify.app">
+<meta property="og:title" content="Bellesa">
+
+<meta property="og:image" content="https://images.app.goo.gl/ZyXg9ngebSotdhrE7">
+
+    <style>
+      .loader-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          z-index: 2005;
+
+      }
+      .loader {
+          color: black;
+          font-size: 20px;
+          margin: 100px auto;
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          position: relative;
+          text-indent: -9999em;
+          -webkit-animation: load4 1.3s infinite linear;
+          animation: load4 1.3s infinite linear;
+          -webkit-transform: translateZ(0);
+          -ms-transform: translateZ(0);
+          transform: translateZ(0);
+      }
+      @-webkit-keyframes load4 {
+          0%,
+          100% {
+              box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+          }
+          12.5% {
+              box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+          }
+          25% {
+              box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+          }
+          37.5% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+          }
+          50% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+          }
+          62.5% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+          }
+          75% {
+              box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+          }
+          87.5% {
+              box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+          }
+      }
+      @keyframes load4 {
+          0%,
+          100% {
+              box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+          }
+          12.5% {
+              box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+          }
+          25% {
+              box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+          }
+          37.5% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+          }
+          50% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+          }
+          62.5% {
+              box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+          }
+          75% {
+              box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+          }
+          87.5% {
+              box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+          }
+      }
+
+  </style>
+</head>
+<body>
+    <!-- nav-section -->
+    <section class=" container-fluid ">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white site-nav wow animate__fadeInDown ">
+                <div class="container-fluid">
+                    <img src="img/Bellesa Logo.svg " class=" navbar-brand mx-auto d-block d-md-none d-lg-none" alt=""> 
+                  <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="feather-menu 3linemenu fw-bold h3"></span>
+                  </button>
+                  <div class="collapse navbar-collapse menu-button-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#products">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                      </li>
+                    </ul>
+                  
+                    
+                        <img src="img/Bellesa Logo.svg " class=" navbar-brand mx-auto d-none d-md-block d-lg-block " alt="">
+                      
+                   
+                 <div class="d-flex justify-content-between align-items-baseline mt-3">
+                     <div class="search-icons">
+                         <i class=" d-flex  align-items-baseline feather-search"></i>
+                     </div>
+                     <div class="search-icons">
+                        <i class=" d-flex  align-items-baseline feather-shopping-cart"></i>
+                    </div>
+                    <div class="search-icons">
+                        <i class=" d-flex  align-items-baseline feather-more-horizontal"></i>
+                    </div>
+                 </div>
+                  </div>
+                </div>
+              </nav>
+           
+        </div>
+
+    </section>
+    <!-- nav-section-end -->
+
+    <!-- home -->
+    <section class=" container-fluid min-vh-100 mt-2 " id="home">
+      <div class="row ">
+        <div class="col-12 col-md-12 col-lg-4">
+           <div class=" text-center mt-5 intro-text">
+            <h1 class=" wow animate__fadeIn">The Arts <br> Of Treatments</h1>
+            <button class=" btn btn-dark btn-lg rounded-0 mt-5 rounded-1  wow animate__zoomIn delay3" onClick="location.href='appointment.html'" >Make an Appointment</button>
+           </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-8 vh-100 mt-4 mt-md-4 mt-lg-0" id="poster">
+         
+          <img src="img/beauty1.jpg" alt="" class="poster1 d-none d-md-none d-lg-none d-xl-block ">
+          
+          <img src="img/beauty1.jpg" alt="" class="poster2 mt-5 d-block d-md-block d-lg-block d-xl-none ">
+
+         
+        </div>
+        <div class=" d-flex justify-content-end  ">
+          <div class="col-12 col-md-5 col-lg-4 col-xl-3 ">
+            <div class="minisq bg-dark float-end "></div>
+            <div class=" bg-white p-3">
+              <h3 class=" wow animate__fadeIn ">December Promo Code</h3>
+              <p class=" fw-light wow animate__fadeIn delay2">SALE For Facial Treatment 20%</p>
+              <a href=" " style="text-decoration: none;" class=" text-dark">Read More... <i class=" feather-arrow-right text-white btn-dark fw-bold  mb-0 p-2 rounded-circle"></i></a>
+            </div>
+          </div>
+        </div>
+       
+
+      </div>
+        
+    </section>
+    <!-- home-end -->
+
+    <!-- about -->
+
+    <section class="container-fluid min-vh-100 " id="about">
+      <div class="row ">
+       <div class="col-12 col-md-12 col-lg-6 col-xl-7 spa-room vh-100 d-none d-md-none d-lg-none d-xl-block  wow animate__zoomIn" ></div>
+       <img src="img/spa-room.jpg" alt="" class=" d-block d-md-block d-lg-block d-xl-none spa-room-pic wow animate__zoomIn">
+       <div class="col-12 col-md-12 col-lg-12 col-xl-5  px-xl-0 mt-3 mt-md-0">
+         <div class="about-text bg-dark mx-0 mt-4 mt-md-0 wow animate__fadeIn">
+           <p class=" text-white  p-3 ">/About</p>
+           <h2 class="  text-white p-3 wow animate__fadeIn delay1">Beauty is power, a smile <br> is  the sword.</h2>
+         </div>
+         <div class="about-text-2">
+           <div class="row">
+             <div class="col-6 mt-5">
+               <div class=" p-3">
+                <p class=" small  ">SEE VIDEO</p>
+                <a href="#" class="" style="text-decoration: none;"><i class=" feather-play-circle h4 text-dark"></i></a>
+                <p class=" text-secondary disabled fw-light ">25 min ago</p>
+               </div>
+             </div>
+             <div class="col-6 mt-5">
+               <a href="#" class=" float-end p-3 text-dark">Read More...</a>
+             </div>
+
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+    <!-- about-end -->
+
+    <!-- products -->
+    <section class=" container-fluid min-vh-100" id="products">
+      <div class="row">
+        <div class="co-12 bg-white mt-1 mt-md-3">
+          <h2 class="  m-2 wow animate__lightSpeedInLeft">Meet Our Best Seller Products/</h2>
+        </div>
+       
+          <div class="product-show mt-2 mt-md-5">
+            <img src="img/s3.jpg" id="p1" class="product-show-img mx-1" alt="" >
+            <img src="img/s2.jpg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s1.jpg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s4.jpeg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s5.jpg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s6.jpg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s7.jpg" id="p1"  class="product-show-img mx-1" alt="">
+            <img src="img/s8.jpg"  id="p1" class="product-show-img mx-1" alt="">
+            <img src="img/s9.jfif"  id="p1" class="product-show-img mx-1" alt="">
+
+          </div>
+
+       <div class="row">
+         <div class="col-12 d-flex justify-content-center">
+          <button class="p-3  mt-2 btn-dark rounded-2 text-white shadow-none wow animate__zoomIn" >About Other Products</button>
+         </div>
+       </div>
+
+      </div>
+    </section>
+    <!-- products-end -->
+    
+    <!-- srvices -->
+    <section class=" container-fluid " id="services">
+      <div class="row">
+        <div class="col-12  mt-xl-5">
+          <div class="text-center">
+            <p class=" wow animate__fadeIn ">/Our Services</p>
+            <h2 class=" wow animate__fadeIn delay2">True Beauty Begins With Amazing Treatments</h2>
+          </div>
+        </div>
+       <div class="col-2 "></div>
+       <div class="col-8">
+        <div class="treatment-show">
+          <img src="img/t1.jpg.opdownload" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn">
+         
+          <img src="img/t3.jpg" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn dealy1">
+          <img src="img/t4.jpg" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn delay1">
+          <img src="img/t7.jpg.opdownload" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn delay2">
+          <img src="img/t6.jpg" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn delay3">
+          <img src="img/t5.jpg" alt="" class="treatment-show-img mx-auto mb-2 rounded-1 wow animate__zoomIn  delay3">
+         
+      </div>
+     <div class=" text-center mt-3">
+      <a href="" style="text-decoration:none" class=" d-flex align-items-center justify-content-center text-dark"><i class=" feather-arrow-right-circle text-dark h3 mx-1 "></i>Read More...</a>
+     </div>
+     <div class=" text-center mt-3">
+      <p class=" text-dark wow animate__zoomIn delay2">Skincare & Facial Treatments</p>
+     </div>
+       </div>
+       <div class="col-2 "></div>
+
+
+
+      </div>
+    
+    </section>
+    <!-- services-end -->
+
+    <!-- gallery -->
+    <section class=" container-fluid " id="gallery">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-9">
+          <div class=" d-flex justify-content-end">
+            <div class="">
+              <p class=" wow animate__fadeIn">Gallery/</p>
+              <h2 class=" wow animate__fadeIn delay3">Your Comfort Is <br> Our Need</h2>
+            </div>
+          </div>
+          <div class="gallery">
+            <img src="img/f1.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn">
+            <img src="img/f2.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn delay1">
+            <img src="img/f3.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn delay1">
+            <img src="img/f4.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn delay2">
+            <img src="img/f5.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn delay3">
+            <img src="img/f6.jpg" alt="" class="gallery-img mb-1 wow animate__zoomIn delay3">
+            <img src="img/f7.jfif" alt="" class="gallery-img mb-1 wow animate__zoomIn delay4">
+
+          </div>
+        </div>
+        <div class="col-1"></div>
+
+      </div>
+    </section>
+    <!-- gallery-end -->
+    
+
+    <!-- testimonial -->
+    <section class=" container-fluid min-vh-100">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-9">
+          <div class="">
+            <p class=" wow animate__fadeIn">/TESTIMONIAL</p>
+            <h2 class=" wow animate__fadeIn delay2">What Our Clents Say <br> About Bellesa</h2>
+
+          </div>
+          
+             <div class="row">
+               <div class="col-12 col-md-5 col-lg-5 col-xl-3">
+                 <div class=" d-flex justify-content-end mt-4">
+                   <div class=" shadow p-1">
+                     <h3 class=" fw-bold">Nathalie William</h3>
+                     <p class=" mx-3 text-secondary wow animate__zoomIn"> " I really enjoy the treatment here.Services  from beauty experts and very professional  staff. I have becpme a permanent member  here, you should try it.   "</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-12 col-md-7 col-lg-7 col-xl-9">
+                <div class="testimonial-show  mt-4 d-flex justify-content-md-center justify-content-end position-relative">
+                  <img src="img/r1.jpg" alt="" class="testimonial-show-img wow animate__zoomIn">
+                  <img src="img/r2.jpg" alt="" class="testimonial-show-img position-absolute cc wow animate__zoomIn delay2">
+  
+                </div>
+               </div>
+             </div>
+           
+
+          
+        </div>
+        <div class="col-1"></div>
+
+      </div>
+    </section>
+    <!-- testimonial-end -->
+    
+
+    <!-- footer -->
+    <section class=" container-fluid  min-vh-100 bg-dark" >
+      <div class="row">
+        <div class="col-3"></div>
+            <div class="  col-12 col-md-6 ">
+              <div class=" m-5 ">
+                <h2 class=" text-center text-white wow animate__zoomIn wow animate__fadeIn">Get In Touch With Us</h2>
+                <p class=" text-secondary text-center fw-lighter wow animate__zoomIn delay3 wow animate__fadeIn delay2">Lorem ipsum dolorue, et, animi a ab, conseqedit dolore <br> doloremque tempore molestiae minus est tenetur eveniet commodi qui <br> maxime. vident laborum! Unde illo excepturi error nesc</p>
+                 <!--  -->
+                 
+                  
+                  
+               
+
+
+
+
+
+
+                <!--  -->
+                <div class=" d-md-flex  justify-content-evenly align-items-center mt-3">
+                  <li class=" footer-list p-2 p-md-0"><a href="" class="footer-link text-white wow animate__fadeIn delay1">Products</a></li>
+                  <li class=" footer-list p-2 p-md-0"><a href="" class="footer-link text-white wow animate__fadeIn delay2">Shop</a></li>
+                  <li class=" footer-list p-2 p-md-0"><a href="" class="footer-link text-white wow animate__fadeIn delay3">Learn More</a></li>
+                  <li class=" footer-list p-2 p-md-0"><a href="" class="footer-link text-white wow animate__fadeIn delay4">Contact Us</a></li>
+
+                 
+
+                </div>
+                <!--  -->
+
+
+                <div class=" d-flex justify-content-evenly align-items-center mt-5">
+                  <div class=" d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class=" d-flex justify-content-center align-items-center mx-2 wow animate__zoomIn delay1">
+                      <i class="feather-twitter text-white shadow-lg"></i>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center mx-2 wow animate__zoomIn delay2">
+                      <i class="feather-facebook text-white shadow-lg"></i>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center mx-2 wow animate__zoomIn delay3">
+                      <i class="feather-mail text-white shadow-lg"></i>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center mx-2 wow animate__zoomIn delay4">
+                      <i class="feather-instagram text-white shadow-lg"></i>
+                    </div>
+                  </div>
+                  <div class=" d-flex justify-content-center wow animate__fadeInUp">
+               
+                    <i class="far fa-copyright text-secondary dd"></i>
+                    <p class=" text-secondary dd">2020 Bellesa house</p>
+                  </div>
+                 </div>
+                
+              </div>
+            </div> 
+            <div class="col-12 col-md-3 d-md-flex align-items-end">
+            
+            </div>
+      </div>
+    </section>
+
+    <!-- footer-end -->
+
+
+
+
+
+
+
+
+
+
+ <script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="vendor/bootstrap Js/bootstrap.bundle.js"></script>
+
+
+<script src="vendor/wow/wow.js"></script> 
+<script src="vendor/slick/slick.min.js"></script>
+
+<script>
+  
+  $(document).ready(function(){
+  $('.product-show').slick({
+    
+  });
+});
+</script>
+
+<script>
+  $('.product-show').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 1000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+<script>
+     wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+</script>
+
+
+</body>
+
+</html>

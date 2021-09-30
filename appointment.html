@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="vendor/bootstrap Css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+      .aa{
+        padding: 20px;
+    border: 1px solid black;
+      }
+    </style>
+</head>
+<body>
+
+ <section class=" container-fluid min-vh-100">
+     <div class="row">
+         <div class="col-12 col-md-12 col-lg-8 col-xl-6 border-1">
+           <div class=" aa ">
+            <h4 class=" text-dark  fw-bold m-3 p-2">Make An Apointment</h4>
+            <!--  -->
+            <div class="m-3 p-2">
+                <label for="name" class="form-label text-dark">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="enter your full name">
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <label for="email" class="form-label text-dark">E-mail</label>
+                <input type="text" class="form-control" id="email" placeholder="enter your E-mail">
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <label for="phone" class="form-label text-dark">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="(xxx) xxx xxxx">
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <select class="form-select text-dark form-control" aria-label="Default select example">
+                  <option selected>Request appointment for</option>
+                  <option value="1">Face</option>
+                  <option value="2">Body</option>
+                  <option value="3">Nail</option>
+                  <option value="3">Foot</option>
+
+                </select>
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <label for="date" class="form-label text-dark">Preferred Date</label>
+                <input type="date" class="form-control" id="date" placeholder="choose date">
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <label for="time" class="form-label text-dark">Preferred time</label>
+                <input type="time" class="form-control" id="time" placeholder="choose time">
+              </div>
+              <!--  -->
+              <div class="m-3 p-2">
+                <label for="note" class="form-label text-dark">Note</label>
+              <div class="alert alert-dark p-5 " role="alert" id="note">
+               In order to better serve you, please let us know the reason for your visit!
+              </div>
+              </div>
+              <!--  -->
+              <div class=" m-3 p-2 ">
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <button  class="btn btn-secondary float-end" onClick="location.href='index.html'">Back</button>
+              </div>
+              <!--  -->
+            
+           </div>
+           
+         </div>
+     </div>
+ </section>
+
+
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap Js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
